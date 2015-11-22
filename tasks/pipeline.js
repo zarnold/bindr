@@ -23,17 +23,16 @@ var cssFilesToInject = [
 // Client-side javascript files to inject in order
 // (uses Grunt-style wildcard/glob/splat expressions)
 var jsFilesToInject = [
-  
-  // Load sails.io before everything else
   'js/dependencies/sails.io.js',
-
-  // Dependencies like jQuery, or Angular are brought in here
   '/bower_components/jquery/dist/jquery.js',
   '/bower_components/angular/angular.js',
   '/bower_components/angular-route/angular-route.js',
   '/bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js',
   '/bower_components/bootstrap/dist/js/boostrap.js',
+  'js/app.js',
   'js/dependencies/**/*.js',
+  'js/service/**/*.js',
+  'js/controllers/**/*.js',
 
   // All of the rest of your client-side js files
   // will be injected here in no particular order.

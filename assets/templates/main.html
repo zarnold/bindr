@@ -1,0 +1,23 @@
+<div class="container" ng-controller="mainCtrl as main">
+  
+  <div class="jumbotron">
+  <h1 align="center">Des auteurs dans ta région</h1>
+  <br>
+  <div id="todo-form" class="row">
+    <div class="col-sm-8 col-sm-offset-2 text-center">
+    </div>
+  </div>
+  </div>
+
+  <div id="todo-list" class="row">
+    <div class="col-sm-4 col-sm-offset-4">
+    <div class="checkbox" ng-repeat="singleAuthor in authors">
+    <label>
+      <input type="checkbox" ng-click="main.removeAuthor(singleAuthor)">
+      {{singleAuthor.value}}
+    </label>
+    </div>
+  </div>
+  </div>
+
+</div>
